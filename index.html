@@ -6,14 +6,23 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Simple RPG</h1>
+  <h1>Simple RPG Game</h1>
   <div id="game-container">
     <canvas id="game" width="320" height="320"></canvas>
-    <div id="stats">
+    <div id="sidebar">
       <div id="playerStats"></div>
+      <div id="inventory"></div>
+      <div id="shop" style="display:none;">
+        <h3>Shop</h3>
+        <button id="buyPotion">Buy Potion (10 gold)</button>
+      </div>
       <div id="message"></div>
     </div>
   </div>
+  <!-- Sprite assets (replace src as desired) -->
+  <img id="playerSprite" src="https://raw.githubusercontent.com/jessefreeman/pixel8r-sprites/master/examples/rpg/hero.png" style="display:none;">
+  <img id="slimeSprite" src="https://raw.githubusercontent.com/jessefreeman/pixel8r-sprites/master/examples/rpg/slime.png" style="display:none;">
+  <img id="goblinSprite" src="https://raw.githubusercontent.com/jessefreeman/pixel8r-sprites/master/examples/rpg/goblin.png" style="display:none;">
   <script src="rpg.js"></script>
 </body>
 </html>
